@@ -1,0 +1,102 @@
+generated: '2026-10-22'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 7
+  own: 4
+  other_domain: 3
+  platform: 0
+  roles:
+  - api
+  - docs
+  - marketing
+  - partner
+  - support
+  - website
+hosts:
+- host: api.displai.ai
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: displai.ai
+  role: api
+  relation: other-domain
+- host: api.raydiant.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: raydiant.com
+  role: api
+  relation: own
+- host: help.displai.ai
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - docs-index
+  - well-known
+  types:
+  - GettingStarted
+  - Documentation
+  serves:
+  - docs
+  registrable_domain: displai.ai
+  role: docs
+  relation: other-domain
+- host: partners.raydiant.com
+  found_by:
+  - probed
+  - site-links
+  - namespace-probe
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  title: 'Raydiant Screen Signage | #1 Digital Signage Platform for Business'
+  status: 200
+  registrable_domain: raydiant.com
+  role: partner
+  relation: own
+- host: support.raydiant.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: raydiant.com
+  role: support
+  relation: own
+- host: www.displai.ai
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - well-known
+  types:
+  - TermsOfService
+  - PrivacyPolicy
+  - Blog
+  serves: []
+  registrable_domain: displai.ai
+  role: marketing
+  relation: other-domain
+- host: www.raydiant.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  serves:
+  - hosting
+  vendor: vercel
+  registrable_domain: raydiant.com
+  role: website
+  relation: own

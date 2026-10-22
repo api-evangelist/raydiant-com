@@ -1,0 +1,18 @@
+generated: '2026-10-22'
+method: probed
+source: https://www.displai.ai/privacy-policy/
+signals:
+  data_retention:
+    evidence:
+      - source: https://www.displai.ai/privacy-policy/
+        http_status: 200
+        fetched: regulatory/privacy.html
+        quote: "Unless you request that we delete certain information, we will retain your personal information, to the extent that any personal information is contained within the information we collect, for the period necessary to fulfill the purposes outlined in this Privacy Policy unless a longer retention period is required or permitted by law."
+    note: Retains personal data until purpose fulfilled or longer period required by law.
+  data_subject_request:
+    evidence:
+      - source: https://www.displai.ai/privacy-policy/
+        http_status: 200
+        fetched: regulatory/privacy.html
+        quote: "Depending on the law that applies, you may have a right to access and rectify or erase your personal data or receive a copy of your personal data, restrict or object to the active processing of your data, ask us to share (port) your personal information to another entity, withdraw any consent you provided to us to process your data, a right to lodge a complaint with a statutory authority and such other rights as may be relevant under applicable laws."
+    note: Provides rights to access, rectify, erase, port, and complain.
